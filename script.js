@@ -11,10 +11,10 @@ function newSpace() {
     space.classList.remove('mole')
   })
 
-  let randomSquare = spaces[Math.floor(Math.random() * 9)]
-  randomSquare.classList.add('mole')
+  let available = spaces[Math.floor(Math.random() * 9)]
+  available.classList.add('mole')
 
-  position = randomSquare.id
+  position = available.id
 }
 
 spaces.forEach(space => {
